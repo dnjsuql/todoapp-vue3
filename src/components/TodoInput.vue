@@ -59,8 +59,12 @@ export default {
     border-radius: 5px;
   }
   .inputBox input {
+    padding: 10px;
     border-style: none;
+    width: calc(100% - 48px);
+    height: 100%;
     font-size: 0.9rem;
+    box-sizing: border-box;
   }
   .addContainer {
     float: right;
