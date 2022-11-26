@@ -1,4 +1,4 @@
-# pjt-portfolio
+# todoapp-vue3
 
 ## Project setup
 ```
