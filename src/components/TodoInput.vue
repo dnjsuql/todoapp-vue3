@@ -6,21 +6,21 @@
     </span>
 
     <!-- <button id="show-modal" @click="showModal = true">Show Modal</button> -->
-    <Modal v-if="showModal" @close="showModal = false">
-      <h3 slot="header">
+    <ModalView v-if="showModal" @close="showModal = false">
+      <!-- <h3 v-slot="header">
         경고!
         <i class="closeModalBtn fas fa-times" @click="showModal = false"></i>
       </h3>
-      <p slot="body">
+      <p v-slot="body">
         무언가를 입력하세요
-      </p>
-    </Modal>
+      </p> -->
+    </ModalView>
  </div>
 </template>
 
 <script>
 
-import Modal from './common/Modal.vue'
+import ModalView from './common/ModalView.vue'
 
 export default {
   data() {
@@ -43,7 +43,7 @@ export default {
     }
   },
   components: {
-    Modal
+    ModalView
   }
 }
 </script>

@@ -1,7 +1,4 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-
-Vue.use(Vuex);
+import { createStore } from 'vuex'
 
 const storage = {
   fetch() {
@@ -17,7 +14,7 @@ const storage = {
   },
 }
 
-export const store = new Vuex.Store({
+export default createStore({
   state: {
     todoItems: storage.fetch()
   },
@@ -45,5 +42,11 @@ export const store = new Vuex.Store({
       localStorage.clear();
       state.todoItems = [];
     }
+  },
+  actions: {
+  },
+  modules: {
   }
-});
+})
+
+

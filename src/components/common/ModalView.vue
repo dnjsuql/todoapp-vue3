@@ -1,14 +1,14 @@
 <template>
-  <transition name="modal">
+  <transition name="modalView">
     <div class="modal-mask">
       <div class="modal-wrapper">
         <div class="modal-container">
 
           <!-- 모달 헤더 -->
           <div class="modal-header">
-            <slot name="header">
+            <v-slot name="header">
               default header
-            </slot>
+            </v-slot>
           </div>
 
           <!-- 모달 바디 -->
