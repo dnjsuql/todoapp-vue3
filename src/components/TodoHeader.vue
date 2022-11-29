@@ -1,13 +1,16 @@
 <template>
-  <header>
-    <h1>Todo it!</h1>
+  <header class="header">
+    <h1 class="header__title">Todo it!</h1>
   </header>
 </template>
 
 <style scoped>
-  h1 {
-    color: #2f3b52;
-    font-weight: 900;
-    margin: 2.5rem 0 1.5rem;
-  }
-</style>>
+.header {
+  margin: 40px 0 20px;
+}
+.header__title {
+  margin: 0;
+  color: #2f3b52;
+  font-weight: 900;
+}
+</style>
